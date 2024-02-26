@@ -4,8 +4,9 @@
 
 function addToArr(arr, num, data) { //num - индекс массива, на который хотим вставить новые элементы, data - массів новых элементов
     const index = arr.findIndex (el => el === num);
+    //const length = arr.length;
             //console.log(index);
-            if (num>=0) { //проверка на введение положительного индекса, тестировщика в тестировщике не убьешь)
+            if (num >= 0 && num <=arr.length) { //проверка на введение положительного индекса, по значению не превышающего длину массива
             return index !== -1 ? [
                 ...arr.slice(0, index +1),
                 ...data,
@@ -15,10 +16,15 @@ function addToArr(arr, num, data) { //num - индекс массива, на к
                 ...arr
             ]
         }
-        else return "Ииндекс элемента массива не может бвть отрицательным";
+        if (num > arr.length) {
+            return "!Ошибка. Индекс элемента массива не может быть больше длины массива"
+        }
+        else return "!Ошибка. Индекс элемента массива не может быть отрицательным";
 };
 
-        let originalArray = [1, 2, 3, 4, 5]; //задать первоначальный массив
-        let num = 0; //индекс массива, на место которого нужно вставить новые элементы
+        let originalArray = [1, 2, 3, 4, 5, 6]; //задать первоначальный массив
+        let num = 8; //индекс массива, на место которого нужно вставить новые элементы
         let dataToInsert = ['a', 'b', 'c'];
-        console.log(addToArr(originalArray, num, dataToInsert));
+        console.log("Количество элементов первоначального массива = ", originalArray.length);
+        console.log("Индекс массива для вставки data = ", num);
+        console.log("Результат: ", addToArr(originalArray, num, dataToInsert));
