@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "scripts": {
+    "lint": "eslint --debug ./ --fix",
+    "lint:write": "eslint ./ --fix && npm run pretty",
+    "pretty": "prettier --write */**/*.js"
+  },
+  "name": "lesson_11_12",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
