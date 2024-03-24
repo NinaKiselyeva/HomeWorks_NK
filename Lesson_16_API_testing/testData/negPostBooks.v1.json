@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "INCORRECT Generated schema for postBook",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "pageCount": {
+      "type": "number"
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "publishDate": {
+      "type": "string"
+    }
+  },
+  "required": ["id", "title", "description", "pageCount", "excerpt", "publishDate"]
+}
