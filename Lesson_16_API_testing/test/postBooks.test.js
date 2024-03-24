@@ -46,4 +46,8 @@ describe("API tests", function () {
     const validationResult = await validator.validate(result.data, negPostBooksJsonSchema2);
     expect(validationResult.valid).toEqual(false);
   });
+
+  test("NEGATIVE POST test: /api/v1/Books should FAILED with JSON schema validation error", async () => {
+    expect(result).toBeValidSchema(negPostBooksJsonSchema1);
+  });
 });
