@@ -1,10 +1,3 @@
-// 1. Настроить фреймворк WebdriverIO для запуска тестов.
-// 2. Подготовить 3-5 тестовых сценария проходящих по официальному сайту фреймворка либо по приложению которое вы выбрали для финального задания;
-// 3. Автоматизировать сценарии с использованием выбранного фреймворка используя:
-// - Page Object Model;
-// - API фреймворка;
-// - структуру одного из фреймворков: Jasmine, Mocha;
-// 4. Добавить eslint и репортер
 const homePage = require("../POM/homePage");
 const searchModal = require("../POM/components/searchModal");
 const rightNavBar = require("../POM/components/rightNavbar");
