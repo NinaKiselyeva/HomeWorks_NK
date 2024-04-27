@@ -1,0 +1,29 @@
+name: Run first test in CI
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 21.6.2
+      - name: Folder
+        run: cd ./Lesson_15_Calculator
+      - name: Dependencies
+        working-directory: ./Lesson_15_Calculator
+        run: npm i
+      - name: Run tests
+        working-directory: ./Lesson_15_Calculator
+        run: npm test
