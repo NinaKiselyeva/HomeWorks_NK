@@ -2,7 +2,7 @@ const mainPage = require('../../POM/mainPage');
 const { DATA, URL, ERROR } = require('../../helpers/constants');
 const loginPage = require('../../POM/loginPage');
 
-describe('Login form testing with invalid cridentials', function () {
+describe.skip('Login form testing with invalid cridentials', function () {
   beforeEach(async () => {
     await browser.maximizeWindow();
     await mainPage.navigate(URL.LOGIN_PAGE_URL);

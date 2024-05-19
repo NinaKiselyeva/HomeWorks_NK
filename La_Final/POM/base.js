@@ -1,6 +1,5 @@
 class Base {
   async navigate(url) {
-    //await browser.refresh();
     await browser.url(url);
   }
   async baseClick(selector) {

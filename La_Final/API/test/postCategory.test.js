@@ -33,13 +33,11 @@ describe('API tests PUT', function () {
   });
 
   test('POST /categories/tree should have response code 201', async () => {
-    //console.log('STATUS', result.status);
     await expect(await result.status).toEqual(201);
   });
 
   test('POST /categories/tree should have valid jsonschema', async () => {
     const validationResult = await validator.validate(result.data, postCategoryJsonSchema);
-    //console.log(validationResult);
     await expect(await validationResult.valid).toEqual(true);
   });
 });

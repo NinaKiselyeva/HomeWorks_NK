@@ -46,8 +46,7 @@ class ProductPage extends Base {
 
   async addToCart(quantity) {
     await this.setQuantity(quantity);
-    await this.buttonAddToCart.waitForExist();
-    await this.buttonAddToCart.click();
+    await this.baseClick(this.buttonAddToCart);
   }
 
   get productCardLink() {

@@ -11,10 +11,12 @@ const TEXT = {
   ANG_SPANNER_PRICE: '$14.14',
   OPEN_SPANNERS: 'Open-end Spanners (Set)',
   OPEN_SPANNERS_PRICE: '$38.51',
-  SEARCH_SCREW: 'screw',
-  SEARCH_SCREW_RES: 'Screw',
-  SEARCH_CUT: 'CUT',
-  SEARCH_CUT_RES: 'Bolt Cutters',
+  SEARCH1: 'screw',
+  SEARCH1_RES: 'Screw',
+  SEARCH2: 'CUT',
+  SEARCH2_RES: 'Bolt Cutters',
+  SEARCH3: 'Court Hammer',
+  CART_TOTAL_EMPTY: '$0.00',
 };
 
 const BUTTON = {
@@ -53,6 +55,7 @@ const DATA = {
 const URL = {
   MAIN_PAGE_URL: 'https://practicesoftwaretesting.com',
   LOGIN_PAGE_URL: 'https://practicesoftwaretesting.com/#/auth/login',
+  PRODUCT_PAGE_CLAWHUMMER: 'https://practicesoftwaretesting.com/#/product/01HY9719FS3NE0FXGSAZN61F3X',
 };
 
 const ERROR = {
@@ -78,6 +81,7 @@ const COUNTER = {
   OTHER_1: 9,
   OTHER_2: 6,
   PRODUCT_QUANTITY: 2,
+  PRODUCT_QUANTITY_EXTRA: 5,
   FIRST_PRODUCT: 0,
   LAST_PRODUCT: 3,
   LAST_PAGE: 'last',
