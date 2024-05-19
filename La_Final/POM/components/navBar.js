@@ -14,7 +14,7 @@ class NavBar extends Base {
   }
 
   get buttonCart() {
-    return $('a[data-test="nav-cart"]');
+    return $('a[data-test="nav-cart"] span');
   }
 
   async getCartCounter() {
