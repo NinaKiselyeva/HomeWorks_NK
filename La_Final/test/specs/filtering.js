@@ -4,7 +4,7 @@ const filterPanel = require('../../POM/components/filterPanel');
 const productsContainer = require('../../POM/components/productsContainer');
 const navBar = require('../../POM/components/navBar');
 
-describe.skip('Apply filters on Products', function () {
+describe('Apply filters on Products', function () {
   beforeEach(async () => {
     await browser.maximizeWindow();
     await mainPage.navigate(URL.MAIN_PAGE_URL);

@@ -4,7 +4,7 @@ const loginPage = require('../../POM/loginPage');
 const accountPage = require('../../POM/accountPage');
 const navBar = require('../../POM/components/navBar');
 
-describe.skip('Login form testing with valid cridentials', function () {
+describe('Login form testing with valid cridentials', function () {
   beforeEach(async () => {
     await browser.maximizeWindow();
     await mainPage.navigate(URL.MAIN_PAGE_URL);

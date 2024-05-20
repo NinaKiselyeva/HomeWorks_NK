@@ -16,14 +16,14 @@ describe('Apply filters on Products', function () {
     await navBar.homeNavBarLogo.click();
   });
 
-  it.skip('Should run search with search Criterion and receive results contain search criterion in Name', async () => {
+  it('Should run search with search Criterion and receive results contain search criterion in Name', async () => {
     await filterPanel.searchByText(TEXT.SEARCH1);
     await expect(await productsContainer.productCard[COUNTER.FIRST_PRODUCT]).toBeExisting();
     await expect(await productsContainer.productCard[COUNTER.FIRST_PRODUCT]).toHaveTextContaining(TEXT.SEARCH1_RES);
-    await expect(await productsContainer.productCard[4]).toHaveTextContaining(TEXT.SEARCH_SCREW_RES);
+    await expect(await productsContainer.productCard[4]).toHaveTextContaining(TEXT.SEARCH1_RES);
   });
 
-  it.skip('Should put in basket product from product page and then clear basket', async () => {
+  it('Should put in basket product from product page and then clear basket', async () => {
     await filterPanel.searchByText(TEXT.SEARCH2);
     await expect(await productsContainer.productCard[COUNTER.FIRST_PRODUCT]).toBeExisting();
     await mainPage.goToProductByIndex(COUNTER.FIRST_PRODUCT);

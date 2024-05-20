@@ -47,6 +47,7 @@ class FilterPanel extends Base {
     await this.baseClick(this.sortSelect);
     const option = await this.sortValue(value);
     await this.baseClick(option);
+    await browser.pause(3000);
   }
 
   async clickCategoryByName(categoryName) {

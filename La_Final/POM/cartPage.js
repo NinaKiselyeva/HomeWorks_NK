@@ -33,6 +33,7 @@ class CartPage extends Base {
     await inputElement.clearValue();
     await inputElement.setValue(newQuantity.toString());
     await browser.keys('Enter');
+    await browser.pause(2000);
   }
 }
 
